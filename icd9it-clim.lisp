@@ -5,8 +5,6 @@
 ; to unzip run, adapting the paths
 ;(deoxybyte-gzip:gunzip "data.gz" "DatatreeClimIcd9it.lisp") 
 
-(defparameter icd (with-open-file (i "~/Programming/Projects/IcdIt2007/Data/DatatreeClimIcd9it.lisp") (read i)))
-
 (define-application-frame icd9it (cw:tree)
   ((info :accessor info :initform ""))
   (:command-table (icd9it :inherit-from (cw:tree)))
@@ -29,4 +27,6 @@
   (cw:t2h tree)
   (cw:tree-view (make-instance 'cw:node :sup key :disp-inf t) 'icd 'icd9it :right 800))
 
-(defun icd-clim () (icdview icd "icd|"))
+(defun icd-clim (&optional (datafile "~/Programming/Projects/IcdIt2007/Data/DatatreeClimIcd9it.lisp"))
+ (let ((icd (with-open-file (i datafile) (read i)))) 
+  (icdview icd "icd|")))
