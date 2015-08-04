@@ -11,3 +11,10 @@ see icd9it-pdf
 
 ; unzip data
 (deoxybyte-gzip:gunzip "data.gz" "DatatreeClimIcd9it.lisp") 
+
+
+test image
+
+![ScreenShot](icd1.jpg)
+
+![ScreenShot](icd2.jpg)
