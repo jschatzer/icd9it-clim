@@ -23,6 +23,8 @@ see icd9it-pdf
 
 test image
 
-![ScreenShot](icd1.jpg)
+![ScreenShot](icd1.png)
 
-![ScreenShot](https://github.com/jschatzer/icd9it-clim/blob/master/icd2.jpg)
+![ScreenShot](https://github.com/jschatzer/icd9it-clim/blob/master/icd2.png)
+
+![Alt text](icd2.png?raw=true "Interventi")
